@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+
+  k8s-api:
+   image: ${DockerHub_Registry}/grpc-api:${DockerImage_Tag}
+   build:
+     context: .
+     dockerfile: GrpcService1/Dockerfile
