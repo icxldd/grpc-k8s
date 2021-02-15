@@ -32,7 +32,7 @@ namespace GrpcService1
                         //        "123456");
                         //});
                         Console.WriteLine(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"));
-                        options.ListenAnyIP(50001, a =>
+                        options.ListenAnyIP(443, a =>
                         {
                             a.Protocols =
                                     Microsoft.AspNetCore.Server.Kestrel.Core.HttpProtocols.Http2;
